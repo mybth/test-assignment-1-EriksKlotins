@@ -27,7 +27,7 @@ int main(int argc, const char * argv[])
     
     
     
-    std::cout << sum;
+//    std::cout << sum;
     output.open("output.txt");
     output << sum;
     output.close();
