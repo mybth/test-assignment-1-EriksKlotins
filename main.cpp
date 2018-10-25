@@ -17,7 +17,8 @@ int main(int argc, const char * argv[])
     int sum=0;
     std::ifstream myReadFile;
     std::ofstream output;
-    myReadFile.open("./input.txt");
+    // std::cout << "Bombastic!\n" << argc << argv[1] << "\n";
+    myReadFile.open(argv[1]);
     
     while (myReadFile >> a)
     {
@@ -29,7 +30,7 @@ int main(int argc, const char * argv[])
     
 //    std::cout << sum;
     output.open("output.txt");
-    output << sum;
+    output << sum << "\n";
     output.close();
     
     
