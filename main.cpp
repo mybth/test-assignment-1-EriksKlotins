@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
     int a=0;
     int sum=0;
     std::ifstream myReadFile;
-    std::ofstream output;
+    // std::ofstream output;
     // std::cout << "Bombastic!\n" << argc << argv[1] << "\n";
     myReadFile.open(argv[1]);
     
@@ -29,9 +29,9 @@ int main(int argc, const char * argv[])
     
     
 //    std::cout << sum;
-    output.open("output.txt");
-    output << sum << "\n";
-    output.close();
+    // output.open("output.txt");
+    std::cout << sum << "\n";
+    // output.close();
     
     
     
